@@ -1,22 +1,95 @@
-.App {
+/* -------------------- IMPORT -------------------- */
+
+@import url("https://fonts.googleapis.com/css?family=DM+Sans:400,700|Space+Mono:400,700&display=swap");
+
+/* -------------------- DEBUG -------------------- */
+
+[debug],
+[debug] * {
+  outline: solid 1px #9400ff;
+  box-shadow: none;
+  filter: none;
+}
+
+/* -------------------- GLOBAL RULE -------------------- */
+
+:root {
+  --black: #1e1e1e;
+  --white: #ffffff;
+  --yellow: #ffcc33;
+  --orange: #f87624;
+  --linearOrange: rgba(250, 110, 35, 0.8);
+  --linearYellow: rgba(255, 110, 50, 0.1);
+  --font-color: black;
+  --bg-color: #fff;
+  --bg-color-count: var(--yellow);
+  --bg-color-header: #faf9f5;
+  --bg-color-footer: var(--orange);
+  --bg-color-btn: rgb(248, 118, 35);
+}
+
+[data-theme="dark"] {
+  --black: #1e1e1e;
+  --white: #ffffff;
+  --yellow: #ffcc33;
+  --orange: #f87624;
+  --linearOrange: rgba(250, 110, 35, 0.8);
+  --linearYellow: rgba(255, 110, 50, 0.1);
+  --font-color: white;
+  --bg-color: black;
+  --bg-color-count: rgb(106, 106, 106);
+  --bg-color-header: black;
+  --bg-color-footer: black;
+  --bg-color-btn: rgb(106, 106, 106);
+}
+
+body {
+  font-family: "DM Sans", Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  line-height: 1.5;
+  color: var(--black);
+}
+
+a {
+  color: var(--font-color);
+  text-decoration: none;
+}
+
+/* -------------------- Back To Top ------------------- */
+
+a#toTheTop {
+  border-radius: 3px;
+  padding: 10px;
+  font-size: 15px;
   text-align: center;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.25);
+  position: fixed;
+  right: 20px;
+  opacity: 1;
+  z-index: 99999;
+  transition: all ease-in 0.2s;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  text-decoration: none;
 }
 
-.App-logo {
-  height: 40vmin;
+a#toTheTop:before {
+  content: "\25b2";
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+a#toTheTop:hover {
+  background: rgba(0, 0, 0, 1);
+  transition: all ease-in 0.2s;
 }
 
-.App-link {
-  color: #09d3ac;
+a#toTheTop.btnHide {
+  bottom: -35px;
+  opacity: 0;
+  transition: all ease-in 0.5s;
+}
+
+a#toTheTop.btnShow {
+  bottom: 20px;
+  opacity: 1;
 }

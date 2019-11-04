@@ -1,0 +1,30 @@
+/* -------------------- HERO -------------------- */
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+  background-image: linear-gradient(
+      to bottom,
+      var(--linearOrange),
+      var(--linearYellow)
+    ),
+    url("../../images/hero.jpg");
+  background-size: cover;
+  background-image: center;
+  background-repeat: no-repeat;
+}
+
+.main-title {
+  color: var(--white);
+  font-size: 5vw;
+  font-weight: bold;
+  margin: 1.25rem;
+}
+
+@media only screen and (min-width: 375px) and (max-width: 812px) {
+  .main-title {
+    font-size: 4rem;
+  }
+}

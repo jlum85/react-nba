@@ -1,0 +1,33 @@
+/* -------------------- Footer ------------------- */
+
+.divFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 5rem;
+  color: var(--font-color);
+  background-color: var(--bg-color-footer);
+  padding: 1rem 5rem;
+  font-family: "Space Mono", monospace;
+  font-size: 1rem;
+}
+
+.socialNetwork {
+  display: flex;
+  flex-direction: row;
+}
+
+.inputMail label {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 0rem;
+}
+
+@media only screen and (min-width: 375px) and (max-width: 812px) {
+  .divFooter {
+    flex-direction: column;
+    height: 8rem;
+    padding: 0.5rem;
+  }
+}

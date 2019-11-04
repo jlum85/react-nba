@@ -24,15 +24,6 @@
   display: flex;
 }
 
-.section-category {
-  padding: 0.5rem 2.5rem;
-  border-radius: 4px;
-  color: var(--font-color);
-  background-color: var(--bg-color-btn);
-  font-size: 1.5rem;
-  transform: rotate(-2deg);
-}
-
 .see-more {
   display: flex;
   align-items: center;
@@ -95,8 +86,5 @@
 @media only screen and (min-width: 375px) and (max-width: 812px) {
   .section-top-bar {
     padding: 2rem;
-  }
-  .section-category {
-    padding: 0.625rem;
   }
 }

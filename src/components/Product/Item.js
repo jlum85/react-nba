@@ -1,26 +1,27 @@
 import React from "react";
 import "../../App.css";
 import "./Product.css";
+import PdtImage from "./PdtImage.js";
+import PdtInfo from "./PdtInfo.js";
 
-const ItemPdt = props => {
+const Item = props => {
   return (
     <>
       <div className="product-item">
-        <div className="product-info">
+        {/* <div className="product-info">
           <p>{props.desc}</p>
           <p className="pdt-price">45$</p>
 
           <form>
             <input type="button" className="btn-product" value="Buy me" />
           </form>
-        </div>
-        <div className="img-hover-zoom">
-          <img src={props.url} alt={props.desc}></img>
-        </div>
+        </div> */}
+        <PdtInfo desc={props.desc} price={props.price}></PdtInfo>
+        <PdtImage url={props.url} desc={props.desc}></PdtImage>
       </div>
           
     </>
   );
 };
 
-export default ItemPdt;
+export default Item;

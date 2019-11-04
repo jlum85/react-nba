@@ -1,7 +1,8 @@
 import React from "react";
 import "../../App.css";
+import "./Collection.css";
 
-const ItemColl = props => {
+const Item = props => {
   return (
     <>
       <div className="collection-item">
@@ -11,9 +12,8 @@ const ItemColl = props => {
           <a href="#">explore</a>
         </div>
       </div>
-          
     </>
   );
 };
 
-export default ItemColl;
+export default Item;

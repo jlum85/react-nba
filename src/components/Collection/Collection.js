@@ -4,7 +4,7 @@ import "./Collection.css";
 
 import ShippingBar from "./ShippingBar.js";
 import CollectionBar from "./CollectionBar.js";
-import ListColl from "./ListColl.js";
+import Items from "./Items.js";
 
 const Collection = () => {
   return (
@@ -13,7 +13,7 @@ const Collection = () => {
         <ShippingBar></ShippingBar>
         <CollectionBar></CollectionBar>
 
-        <ListColl></ListColl>
+        <Items></Items>
       </section>
     </>
   );

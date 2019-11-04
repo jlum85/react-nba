@@ -6,7 +6,7 @@ import Scroll from "./components/Nav/Scroll.js";
 import Header from "./components/Nav/Header.js";
 import Hero from "./components/Hero/Hero.js";
 import Collection from "./components/Collection/Collection.js";
-import Products from "./components/Product/Products.js";
+import Product from "./components/Product/Product.js";
 import Philosophy from "./components/Philosophy/Philosophy.js";
 import Newsletter from "./components/Newsletter/Newsletter.js";
 import Footer from "./components/Footer/Footer.js";
@@ -20,7 +20,7 @@ function App() {
       <Header></Header>
       <Hero></Hero>
       <Collection></Collection>
-      <Products></Products>
+      <Product></Product>
       <Philosophy></Philosophy>
       <Newsletter></Newsletter>
       <Footer></Footer>

@@ -1,0 +1,14 @@
+.section-category {
+  padding: 0.5rem 2.5rem;
+  border-radius: 4px;
+  color: var(--font-color);
+  background-color: var(--bg-color-btn);
+  font-size: 1.5rem;
+  transform: rotate(-2deg);
+}
+
+@media only screen and (min-width: 375px) and (max-width: 812px) {
+  .section-category {
+    padding: 0.625rem;
+  }
+}
